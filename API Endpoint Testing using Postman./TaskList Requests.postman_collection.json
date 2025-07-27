@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "3530447c-b818-4481-a301-254af775d3d6",
+		"name": "TaskList Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47096274",
+		"_collection_link": "https://security-saganist-26946415-2397555.postman.co/workspace/Tayv's-Workspace~72fe149d-4011-4daf-8e7f-a61c29096987/collection/47096274-3530447c-b818-4481-a301-254af775d3d6?action=share&source=collection_link&creator=47096274"
+	},
+	"item": [
+		{
+			"name": "List Task Lists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/task-lists",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"task-lists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Task List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Test List\",\n    \"description\": \"This is the test list.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/task-lists",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"task-lists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Task List by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/task-lists/{task_list_id}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"task-lists",
+						"{task_list_id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Task List",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"08fe0249-e33b-4abe-8e33-7b60757f59cf\",\n    \"title\": \"Test List\",\n    \"description\": \"This is the updated test list.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/task-lists/{task_list_id}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"task-lists",
+						"{task_list_id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Task List",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/task-lists/{task_list_id}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"task-lists",
+						"{task_list_id}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

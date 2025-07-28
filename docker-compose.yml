@@ -15,5 +15,5 @@ services:
     # ⚠️ - Do no store plaintext passwords in source control. We
     #      do so here as this is a builder.
     environment:
-      POSTGRES_PASSWORD: Tatvagya_11
+      POSTGRES_PASSWORD: yourPassword
       #changemeinprod!

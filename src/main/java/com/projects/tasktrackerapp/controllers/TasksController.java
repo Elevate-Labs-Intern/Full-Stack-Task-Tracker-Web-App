@@ -15,7 +15,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @RestController
-@RequestMapping(path = "/api/task-lists/{task_list_id}/tasks")
+@RequestMapping(path = "/task-lists/{task_list_id}/tasks")
 @Tag(name = "Task APIs", description = "Listing a TaskList's Tasks and CRUD operations.")
 public class TasksController {
 

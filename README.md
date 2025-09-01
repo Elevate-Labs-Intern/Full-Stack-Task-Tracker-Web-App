@@ -77,6 +77,127 @@ Source code(Spring Boot backend, React frontend and RESTful API), Postman collec
 <!--<img width="1047" height="138" alt="Image" src="https://github.com/user-attachments/assets/8fb90e9c-ba6b-49a8-9268-c1cd2612b8ef" />-->
 
 
+## Directory Structure
+```text
+├── .DS_Store
+├── .gitattributes
+├── .gitignore
+├── .mvn/
+│   └── wrapper/
+│       └── maven-wrapper.properties
+├── API Endpoint Testing using Postman./
+│   ├── Task Requests.postman_collection.json
+│   ├── Task Tracker Web App.postman_environment.json
+│   └── TaskList Requests.postman_collection.json
+├── Final Report.pdf
+├── README.md
+├── REST API Endpoints.png
+├── React Frontend/
+│   ├── .DS_Store
+│   ├── .vite/
+│   │   ├── deps_temp_9d4db432/
+│   │   │   └── package.json
+│   │   ├── deps_temp_bcd9415c/
+│   │   │   └── package.json
+│   │   └── deps_temp_cd8f3035/
+│   │       └── package.json
+│   ├── LICENSE
+│   ├── README.md
+│   ├── docker-compose.yml
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── public/
+│   │   ├── Favicon.png
+│   │   └── vite.svg
+│   ├── src/
+│   │   ├── App.css
+│   │   ├── App.tsx
+│   │   ├── AppProvider.tsx
+│   │   ├── assets/
+│   │   │   └── react.svg
+│   │   ├── components/
+│   │   │   ├── CreateUpdateTaskListScreen.tsx
+│   │   │   ├── CreateUpdateTaskScreen.tsx
+│   │   │   ├── TaskListsScreen.tsx
+│   │   │   └── TasksScreen.tsx
+│   │   ├── domain/
+│   │   │   ├── Task.ts
+│   │   │   ├── TaskList.ts
+│   │   │   ├── TaskPriority.ts
+│   │   │   └── TaskStatus.ts
+│   │   ├── index.css
+│   │   ├── main.tsx
+│   │   └── vite-env.d.ts
+│   ├── tailwind.config.js
+│   ├── tsconfig.app.json
+│   ├── tsconfig.json
+│   ├── tsconfig.node.json
+│   └── vite.config.ts
+├── Swagger UI Images/
+│   ├── 1.png
+│   ├── 2.png
+│   ├── 3.png
+│   ├── 4.png
+│   └── Swagger Documentation.png
+├── docker-compose.yml
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+└── src/
+    ├── main/
+    │   ├── java/
+    │   │   └── com/
+    │   │       └── projects/
+    │   │           └── tasktrackerapp/
+    │   │               ├── TasktrackerappApplication.java
+    │   │               ├── config/
+    │   │               │   └── SwaggerConfig.java
+    │   │               ├── controllers/
+    │   │               │   ├── GlobalExceptionHandler.java
+    │   │               │   ├── TaskListController.java
+    │   │               │   └── TasksController.java
+    │   │               ├── domain/
+    │   │               │   ├── .DS_Store
+    │   │               │   ├── dto/
+    │   │               │   │   ├── ErrorResponse.java
+    │   │               │   │   ├── TaskDto.java
+    │   │               │   │   └── TaskListDto.java
+    │   │               │   └── entities/
+    │   │               │       ├── Task.java
+    │   │               │       ├── TaskList.java
+    │   │               │       ├── TaskPriority.java
+    │   │               │       └── TaskStatus.java
+    │   │               ├── mappers/
+    │   │               │   ├── TaskListMapper.java
+    │   │               │   ├── TaskMapper.java
+    │   │               │   └── impl/
+    │   │               │       ├── TaskListMapperImpl.java
+    │   │               │       └── TaskMapperImpl.java
+    │   │               ├── repositories/
+    │   │               │   ├── TaskListRepository.java
+    │   │               │   └── TaskRepository.java
+    │   │               └── services/
+    │   │                   ├── TaskListService.java
+    │   │                   ├── TaskService.java
+    │   │                   └── impl/
+    │   │                       ├── TaskListServiceImpl.java
+    │   │                       └── TaskServiceImpl.java
+    │   └── resources/
+    │       └── application.properties
+    └── test/
+        ├── java/
+        │   └── com/
+        │       └── projects/
+        │           └── tasktrackerapp/
+        │               └── TasktrackerappApplicationTests.java
+        └── resources/
+            └── application.properties
+```
+
+
 ## Steps to run application locally
 1. Set the password to your PostgreSQL server in src/main/resources and docker-compose.yml files.
 2. Open the backend API in IntelliJ and navigate to the pom.xml file. Reload Maven with IntelliJ's <br>built-in support.
